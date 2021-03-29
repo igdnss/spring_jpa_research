@@ -1,0 +1,22 @@
+server:
+  port: 9001 #端口
+spring:
+  favicon:
+    enabled: false
+  application:
+    name: origin-demo #服务名称
+  datasource:
+    username: root
+    password: China123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloud?useUnicode=true&characterEncoding=UTF-8
+  #配置jpa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+    database: MySQL
+    show-sql: true
+    open-in-view: true
